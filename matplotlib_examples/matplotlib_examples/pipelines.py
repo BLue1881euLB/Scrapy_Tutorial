@@ -8,6 +8,9 @@ from scrapy.pipelines.files import FilesPipeline
 from urllib.parse import  urlparse
 from os.path import basename,dirname,join
 
+from scrapy.pipelines.files import  FilesPipeline
+from urllib.parse import urlparse
+from os.path import basename,dirname,join
 
 class MyFilesPipeline(FilesPipeline):
     def file_path(self,request,response=None,info=None):
